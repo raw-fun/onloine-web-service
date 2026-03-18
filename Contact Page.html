@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#030305" />
+  <meta name="description" content="Contact BeRaW Digital Agency. Start your next big project with us today." />
+  <meta name="keywords" content="Contact BeRaW, Digital Agency Contact, Hire Web Developer, Bangladesh Agency" />
+  <meta name="author" content="BeRaW Digital Agency" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://sites.google.com/view/bangladesh-hub/contact" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BeRaW | Contact Us" />
+  <meta property="og:description" content="Get in touch with BeRaW Digital Agency to scale your business." />
+  <meta property="og:url" content="https://sites.google.com/view/bangladesh-hub/contact" />
+  <meta property="og:site_name" content="BeRaW" />
+
+  <title>BeRaW | Premium Digital Agency - Contact</title>
+
+  <!-- Performance: Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    :root {
+      --bg-deep: #030305;
+      --bg-alt: rgba(25, 25, 35, 0.3);
+      --bg-card: rgba(25, 25, 35, 0.6);
+      --primary: #6366f1;
+      --secondary: #ec4899;
+      --success: #10b981;
+      --danger: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --glass-bg: rgba(255, 255, 255, 0.03);
+      --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      --container: 1300px;
+      --radius: 20px;
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.25);
+      --header-h: 76px;
+    }
+
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-main);
+      font-family: "Plus Jakarta Sans", sans-serif;
+      overflow-x: hidden;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { animation: none !important; transition: none !important; }
+    }
+
+    /* Accessibility */
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 2px solid var(--primary); outline-offset: 4px; border-radius: 6px;
+    }
+    .sr-only {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: absolute; top: -40px; left: 10px; background: #fff; color: #000;
+      padding: 8px 12px; border-radius: 8px; z-index: 3000; text-decoration: none;
+      font-weight: 700; transition: top 0.3s;
+    }
+    .skip-link:focus { top: 10px; }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-deep); }
+    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--secondary); }
+
+    /* Utility */
+    .bg-alternate { background: var(--bg-alt); }
+    .w-full { width: 100%; }
+    .flex-center { display: flex; justify-content: center; align-items: center; }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;
+    }
+
+    /* Background Effects */
+    .ambient-glow {
+      position: fixed; width: 50vw; height: 50vw;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(0,0,0,0) 60%);
+      top: -20vh; left: -20vw; border-radius: 50%; z-index: -1; pointer-events: none; filter: blur(2px);
+    }
+    .ambient-glow.right {
+      background: radial-gradient(circle, rgba(236, 72, 153, 0.08) 0%, rgba(0,0,0,0) 60%);
+      top: auto; bottom: -20vh; left: auto; right: -20vw;
+    }
+
+    /* Layout Components */
+    h1, h2, h3, h4 { font-family: "Outfit", sans-serif; line-height: 1.2; }
+    .section-padding { padding: 6rem 5%; scroll-margin-top: calc(var(--header-h) + 14px); }
+    .container { max-width: var(--container); margin: 0 auto; width: 100%; }
+
+    /* Navbar */
+    header {
+      position: fixed; width: 100%; top: 0; padding: 1.1rem 5%; display: flex;
+      justify-content: space-between; align-items: center; background: rgba(3, 3, 5, 0.7);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border);
+      z-index: 2000; transition: padding .3s ease, background .3s ease, box-shadow .3s ease; min-height: var(--header-h);
+    }
+    .logo {
+      font-family: "Outfit", sans-serif; font-size: clamp(1.4rem, 4vw, 1.8rem);
+      font-weight: 800; color: var(--text-main); text-decoration: none; display: flex; align-items: center; gap: 10px;
+    }
+    .logo i { color: var(--primary); font-size: 1.5rem; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.96rem;
+      transition: var(--transition); position: relative; padding-bottom: 4px;
+    }
+    .nav-links a::after {
+      content: ""; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary)); transition: width .25s ease;
+    }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--text-main); }
+    .nav-links a:hover::after, .nav-links a[aria-current="page"]::after { width: 100%; }
+    .btn-outline {
+      background: transparent; color: var(--text-main); border: 1px solid var(--glass-border);
+      padding: 0.65rem 1.4rem; border-radius: 999px; text-decoration: none; font-weight: 600;
+      transition: var(--transition); display: inline-block; text-align: center;
+    }
+    .btn-outline:hover { background: var(--text-main); color: var(--bg-deep); }
+    .menu-toggle { display: none; color: var(--text-main); font-size: 1.4rem; cursor: pointer; border: none; background: transparent; padding: 5px; }
+
+    /* Buttons */
+    .btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; padding: 1rem 2.4rem; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 1.03rem; transition: var(--transition); border: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3); cursor: pointer; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 35px rgba(236, 72, 153, 0.35); }
+    .btn-primary:disabled { opacity: .75; cursor: not-allowed; transform: none; }
+
+    /* Page Header */
+    .page-header { padding: calc(var(--header-h) + 6rem) 5% 4rem; text-align: center; position: relative; border-bottom: 1px solid var(--glass-border); background: linear-gradient(to bottom, rgba(3,3,5,0) 0%, var(--bg-alt) 100%); }
+    .page-header h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; margin-bottom: 1rem; }
+    .page-header p { color: var(--text-muted); font-size: clamp(1.05rem, 2vw, 1.2rem); max-width: 700px; margin: 0 auto; }
+
+    /* Contact Info Cards */
+    .contact-info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem; margin-top: -2rem; position: relative; z-index: 10; padding: 0 5%; }
+    .info-card { background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 2.5rem 2rem; text-align: center; transition: var(--transition); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: var(--shadow-soft); }
+    .info-card:hover { transform: translateY(-8px); border-color: rgba(99, 102, 241, 0.4); }
+    .info-icon { width: 60px; height: 60px; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary); margin: 0 auto 1.5rem; transition: var(--transition); }
+    .info-card:hover .info-icon { background: var(--primary); color: #fff; transform: scale(1.1); }
+    .info-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .info-card p { color: var(--text-muted); font-size: 1rem; }
+    .info-card a { color: var(--text-muted); text-decoration: none; transition: var(--transition); }
+    .info-card a:hover { color: var(--primary); }
+
+    /* Form & Map Split Section */
+    .contact-split { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: stretch; margin-top: 2rem; }
+    
+    /* Contact Form (Enhanced for standalone page) */
+    .contact-form-wrapper { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 3rem; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+    .contact-form-wrapper h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .contact-form-wrapper > p { color: var(--text-muted); margin-bottom: 2.5rem; font-size: 0.95rem; }
+    
+    .form-group { margin-bottom: 1.2rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .form-label { display: inline-block; margin-bottom: .45rem; font-size: .9rem; color: var(--text-muted); font-weight: 600; }
+    .form-control { width: 100%; padding: 1rem 1.2rem; background: rgba(0, 0, 0, 0.4); border: 1px solid var(--glass-border); border-radius: 12px; color: #fff; font-family: inherit; font-size: .95rem; transition: var(--transition); }
+    .form-control:hover { border-color: rgba(99, 102, 241, 0.5); }
+    .form-control:focus { outline: none; border-color: var(--primary); background: rgba(0, 0, 0, 0.6); box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); }
+    .form-control[aria-invalid="true"] { border-color: var(--danger); box-shadow: 0 0 0 3px rgba(239, 68, 68, .15); }
+    .error-text { display: none; margin-top: .35rem; font-size: .84rem; color: #fca5a5; }
+    .error-text.active { display: block; }
+    textarea.form-control { height: 150px; resize: vertical; }
+
+    /* Google Map Wrapper with Dark Mode CSS Filter */
+    .map-wrapper { width: 100%; height: 100%; min-height: 400px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--glass-border); position: relative; }
+    .map-wrapper iframe { width: 100%; height: 100%; border: none; /* The CSS trick to make the map dark */ filter: invert(90%) hue-rotate(180deg) contrast(90%); }
+    .map-overlay { position: absolute; inset: 0; pointer-events: none; border-radius: var(--radius); box-shadow: inset 0 0 40px rgba(3, 3, 5, 0.5); }
+
+    /* Footer */
+    footer { background: #010101; padding: 5rem 5% 2rem; border-top: 1px solid var(--glass-border); margin-top: 4rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.6rem; margin-bottom: 3.2rem; }
+    .footer-about p { color: var(--text-muted); margin-top: 1rem; margin-bottom: 1.5rem; font-size: .95rem; max-width: 460px; }
+    .social-links { display: flex; gap: .7rem; }
+    .social-links a { width: 38px; height: 38px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; transition: var(--transition); font-size: .9rem; }
+    .social-links a:hover { background: var(--primary); transform: translateY(-2px); }
+    .footer-links h4 { font-size: 1.08rem; margin-bottom: 1rem; color: #fff; }
+    .footer-links ul { list-style: none; }
+    .footer-links li { margin-bottom: .75rem; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; transition: var(--transition); font-size: .95rem; }
+    .footer-links a:hover { color: var(--primary); padding-left: 4px; }
+    .copyright { text-align: center; padding-top: 1.7rem; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: .85rem; }
+
+    /* Extras */
+    .scroll-top-btn { position: fixed; bottom: 30px; right: 30px; width: 45px; height: 45px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border: none; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-soft); opacity: 0; visibility: hidden; transform: translateY(20px); transition: var(--transition); z-index: 1500; }
+    .scroll-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity .8s ease-out, transform .8s ease-out; will-change: opacity, transform; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: .08s; }
+    .delay-2 { transition-delay: .16s; }
+    .delay-3 { transition-delay: .24s; }
+
+    /* Responsive */
+    @media (max-width: 992px) { 
+      .contact-split { grid-template-columns: 1fr; gap: 2.5rem; } 
+      .map-wrapper { height: 400px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.2rem; } 
+    }
+    @media (max-width: 768px) { 
+      .hidden-mobile { display: none !important; } 
+      .section-padding { padding: 4rem 5%; } 
+      .ambient-glow, .ambient-glow.right { width: 300px; height: 300px; } 
+      .nav-links { position: fixed; top: var(--header-h); left: -100%; width: 100%; height: calc(100vh - var(--header-h)); background: rgba(3, 3, 5, 0.98); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); flex-direction: column; align-items: center; justify-content: center; transition: left .35s ease; gap: 1.7rem; } 
+      .nav-links.active { left: 0; } 
+      .menu-toggle { display: block; } 
+      .footer-grid { grid-template-columns: 1fr; gap: 1.8rem; } 
+      .contact-info-grid { margin-top: 0; padding: 0; }
+    }
+    @media (max-width: 480px) { 
+      .form-row { grid-template-columns: 1fr; gap: 0; } 
+      .contact-form-wrapper { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">মূল কনটেন্টে যান</a>
+
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="ambient-glow right" aria-hidden="true"></div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <a href="https://sites.google.com/view/bangladesh-hub/" target="_top" class="logo" aria-label="BeRaW Home">
+      <i class="fa-solid fa-bolt" aria-hidden="true"></i> BeRaW
+    </a>
+
+    <!-- Navigation Menu (Target Top Added & Absolute Links) -->
+    <nav aria-label="Primary Navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="https://sites.google.com/view/bangladesh-hub/" target="_top">হোম</a></li>
+        <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">সার্ভিস</a></li>
+        <li><a href="https://sites.google.com/view/bangladesh-hub/pricing" target="_top">প্ল্যানসমূহ</a></li>
+        <li><a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" aria-current="page">যোগাযোগ</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="btn-outline hidden-mobile">প্রজেক্ট শুরু করুন</a>
+
+    <button class="menu-toggle" id="mobile-menu" aria-label="মোবাইল মেনু চালু/বন্ধ করুন" aria-expanded="false" aria-controls="nav-links">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Contact Page Header -->
+    <section class="page-header fade-up">
+      <div class="container">
+        <h1>যোগাযোগ <span class="gradient-text">করুন</span></h1>
+        <p>আপনার আইডিয়া নিয়ে বিস্তারিত আলোচনা করতে আমরা প্রস্তুত। যেকোনো প্রয়োজনে আমাদের সাথে যোগাযোগ করুন, আমরা দ্রুত উত্তর দেওয়ার চেষ্টা করব।</p>
+      </div>
+    </section>
+
+    <!-- Info Cards Overlapping Header -->
+    <div class="container contact-info-grid">
+      <div class="info-card fade-up delay-1">
+        <div class="info-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+        <h3>আমাদের অফিস</h3>
+        <p>গুলশান-১, ঢাকা-১২১২<br>বাংলাদেশ</p>
+      </div>
+      <div class="info-card fade-up delay-2">
+        <div class="info-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+        <h3>ইমেইল অ্যাড্রেস</h3>
+        <p><a href="mailto:hello@berawagency.com">hello@berawagency.com</a><br><a href="mailto:support@berawagency.com">support@berawagency.com</a></p>
+      </div>
+      <div class="info-card fade-up delay-3">
+        <div class="info-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+        <h3>ফোন নম্বর</h3>
+        <p><a href="tel:+8801234567890">+880 1234 567 890</a><br><a href="tel:+8809876543210">+880 9876 543 210</a></p>
+      </div>
+    </div>
+
+    <!-- Form and Map Split Section -->
+    <section class="section-padding" style="padding-top: 0;">
+      <div class="container contact-split">
+        
+        <!-- Enhanced Form Layout -->
+        <div class="contact-form-wrapper fade-up delay-1">
+          <h2>আমাদের মেসেজ দিন</h2>
+          <p>আপনার প্রজেক্টের রিকয়ারমেন্ট আমাদের জানান। আমাদের টিম ২৪ ঘণ্টার মধ্যে আপনার সাথে যোগাযোগ করবে।</p>
+          
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">আপনার নাম</label>
+                <input id="name" name="name" type="text" class="form-control" placeholder="যেমন: জন ডো" required minlength="2" autocomplete="name" />
+                <p class="error-text" id="nameError">দয়া করে অন্তত ২ অক্ষরের নাম লিখুন।</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">ইমেইল</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="example@email.com" required autocomplete="email" />
+                <p class="error-text" id="emailError">দয়া করে বৈধ ইমেইল লিখুন।</p>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="service">সার্ভিস নির্বাচন</label>
+              <select id="service" name="service" class="form-control" required>
+                <option value="" selected disabled>সার্ভিস নির্বাচন করুন</option>
+                <option value="video">Video Editing</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="social">Social Management</option>
+                <option value="graphics">Graphics Design</option>
+                <option value="ai">AI Automation</option>
+                <option value="webapp">Web App Build</option>
+                <option value="webdev">Web Development</option>
+                <option value="other">অন্যান্য</option>
+              </select>
+              <p class="error-text" id="serviceError">একটি সার্ভিস নির্বাচন করুন।</p>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="message">প্রজেক্ট ডিটেইলস</label>
+              <textarea id="message" name="message" class="form-control" placeholder="আপনার প্রজেক্ট সম্পর্কে বিস্তারিত লিখুন... আপনার বাজেট এবং ডেডলাইন উল্লেখ করতে পারেন।" required minlength="10"></textarea>
+              <p class="error-text" id="messageError">দয়া করে অন্তত ১০ অক্ষরের বার্তা লিখুন।</p>
+            </div>
+            
+            <button type="submit" class="btn-primary w-full flex-center" id="submitBtn">
+              মেসেজ পাঠান <i class="fa-solid fa-paper-plane" aria-hidden="true" style="margin-left: 8px;"></i>
+            </button>
+            <p id="formStatus" class="sr-only" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- Interactive Google Map embedded with Dark Mode Filter -->
+        <div class="map-wrapper fade-up delay-2">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.138445101683!2d90.4103133153628!3d23.77808269363167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7715a40c603%3A0xec01cd75f33139f5!2sGulshan%201%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1680000000000!5m2!1sen!2sbd" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="BeRaW Office Location"
+          ></iframe>
+          <div class="map-overlay"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section (Target Top Added) -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="https://sites.google.com/view/bangladesh-hub/" target="_top" class="logo"><i class="fa-solid fa-bolt" aria-hidden="true"></i> BeRaW</a>
+          <p>আমরা একটি প্রিমিয়াম ডিজিটাল এজেন্সি যা আধুনিক টেকনোলজি ব্যবহার করে ব্র্যান্ডের ডিজিটাল উপস্থিতি শক্তিশালী করে।</p>
+          <div class="social-links">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>কুইক লিংকস</h4>
+          <ul>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/" target="_top">হোমপেজ</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">সেবা</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/pricing" target="_top">প্রাইসিং</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top">যোগাযোগ</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>আমাদের সার্ভিস</h4>
+          <ul>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">ওয়েব ডেভেলপমেন্ট</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">এআই অটোমেশন</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">ডিজিটাল মার্কেটিং</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">ভিডিও এডিটিং</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>লিগ্যাল</h4>
+          <ul>
+            <li><a href="#" target="_top">Privacy Policy</a></li>
+            <li><a href="#" target="_top">Terms of Service</a></li>
+            <li><a href="#" target="_top">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 BeRaW Digital Agency. All Rights Reserved. Crafted in Bangladesh.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="উপরে যান">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script>
+    (() => {
+      "use strict";
+      const body = document.body, header = document.getElementById("header"), mobileMenu = document.getElementById("mobile-menu"), navLinks = document.getElementById("nav-links"), navAnchors = [...document.querySelectorAll('.nav-links a')], menuIcon = mobileMenu?.querySelector("i"), scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      const setMenuState = (open) => {
+        if (!navLinks || !mobileMenu || !menuIcon) return;
+        navLinks.classList.toggle("active", open); mobileMenu.setAttribute("aria-expanded", String(open));
+        menuIcon.classList.toggle("fa-bars", !open); menuIcon.classList.toggle("fa-xmark", open);
+        body.style.overflow = open ? "hidden" : "";
+      };
+
+      mobileMenu?.addEventListener("click", (e) => { e.stopPropagation(); setMenuState(!navLinks.classList.contains("active")); });
+      document.addEventListener("click", (e) => { if (navLinks.classList.contains("active") && !header.contains(e.target)) setMenuState(false); });
+      navAnchors.forEach((a) => a.addEventListener("click", () => setMenuState(false)));
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenuState(false); });
+      scrollTopBtn?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+      let ticking = false;
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const sp = window.scrollY, compact = sp > 40;
+            header.style.background = compact ? "rgba(3, 3, 5, 0.95)" : "rgba(3, 3, 5, 0.7)";
+            header.style.boxShadow = compact ? "0 4px 30px rgba(0,0,0,.5)" : "none";
+            header.style.padding = compact ? "0.75rem 5%" : "1.1rem 5%";
+            scrollTopBtn.classList.toggle("visible", sp > 500);
+            ticking = false;
+          }); ticking = true;
+        }
+      }, { passive: true });
+
+      const fadeEls = document.querySelectorAll(".fade-up");
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("visible"); revealObserver.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      fadeEls.forEach((el) => revealObserver.observe(el));
+
+      // Form Validation and Submission Logic
+      const form = document.getElementById("contactForm"), submitBtn = document.getElementById("submitBtn"), formStatus = document.getElementById("formStatus");
+      const fields = { 
+        name: { el: document.getElementById("name"), err: document.getElementById("nameError") }, 
+        email: { el: document.getElementById("email"), err: document.getElementById("emailError") }, 
+        service: { el: document.getElementById("service"), err: document.getElementById("serviceError") }, 
+        message: { el: document.getElementById("message"), err: document.getElementById("messageError") } 
+      };
+      
+      const validate = (k) => {
+        const f = fields[k], v = f.el.value.trim();
+        let ok = k === "name" ? v.length >= 2 : k === "email" ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) : k === "service" ? v !== "" : v.length >= 10;
+        f.el.setAttribute("aria-invalid", String(!ok)); f.err.classList.toggle("active", !ok); return ok;
+      };
+      Object.keys(fields).forEach(k => { fields[k].el.addEventListener("input", () => validate(k)); fields[k].el.addEventListener("blur", () => validate(k)); });
+
+      form?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (!Object.keys(fields).every(validate)) return;
+        const orig = submitBtn.innerHTML; submitBtn.disabled = true;
+        submitBtn.innerHTML = 'প্রসেস হচ্ছে... <i class="fa-solid fa-spinner fa-spin" style="margin-left:8px;"></i>';
+        
+        // Simulating API call delay
+        await new Promise(r => setTimeout(r, 1200));
+        
+        submitBtn.innerHTML = 'পাঠানো হয়েছে <i class="fa-solid fa-check" style="margin-left:8px;"></i>';
+        submitBtn.style.background = "var(--success)"; submitBtn.style.boxShadow = "0 10px 30px rgba(16,185,129,.3)";
+        form.reset(); 
+        Object.keys(fields).forEach(k => { fields[k].el.setAttribute("aria-invalid", "false"); fields[k].err.classList.remove("active"); });
+        
+        setTimeout(() => { submitBtn.disabled = false; submitBtn.innerHTML = orig; submitBtn.style.background = ""; submitBtn.style.boxShadow = ""; }, 3000);
+      });
+    })();
+  </script>
+</body>
+</html>

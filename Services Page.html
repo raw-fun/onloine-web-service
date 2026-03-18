@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#030305" />
+  <meta name="description" content="BeRaW Services - Video Editing, Web Development, SEO, Digital Marketing, and AI Automation." />
+  <meta name="keywords" content="Services, Video Editing, Web Development, SEO, AI Automation, Digital Agency, BeRaW" />
+  <meta name="author" content="BeRaW Digital Agency" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://sites.google.com/view/bangladesh-hub/services" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BeRaW | Our Services" />
+  <meta property="og:description" content="Explore our premium digital services designed to scale your business." />
+  <meta property="og:url" content="https://sites.google.com/view/bangladesh-hub/services" />
+  <meta property="og:site_name" content="BeRaW" />
+
+  <title>BeRaW | Premium Digital Agency - Services</title>
+
+  <!-- Performance: Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    :root {
+      --bg-deep: #030305;
+      --bg-alt: rgba(25, 25, 35, 0.3);
+      --bg-card: rgba(25, 25, 35, 0.6);
+      --primary: #6366f1;
+      --secondary: #ec4899;
+      --success: #10b981;
+      --danger: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --glass-bg: rgba(255, 255, 255, 0.03);
+      --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      --container: 1300px;
+      --radius: 20px;
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.25);
+      --header-h: 76px;
+    }
+
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-main);
+      font-family: "Plus Jakarta Sans", sans-serif;
+      overflow-x: hidden;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { animation: none !important; transition: none !important; }
+    }
+
+    /* Accessibility */
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 2px solid var(--primary); outline-offset: 4px; border-radius: 6px;
+    }
+    .sr-only {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: absolute; top: -40px; left: 10px; background: #fff; color: #000;
+      padding: 8px 12px; border-radius: 8px; z-index: 3000; text-decoration: none;
+      font-weight: 700; transition: top 0.3s;
+    }
+    .skip-link:focus { top: 10px; }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-deep); }
+    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--secondary); }
+
+    /* Utility */
+    .bg-alternate { background: var(--bg-alt); }
+    .w-full { width: 100%; }
+    .flex-center { display: flex; justify-content: center; align-items: center; }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;
+    }
+
+    /* Background Effects */
+    .ambient-glow {
+      position: fixed; width: 50vw; height: 50vw;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(0,0,0,0) 60%);
+      top: -20vh; left: -20vw; border-radius: 50%; z-index: -1; pointer-events: none; filter: blur(2px);
+    }
+    .ambient-glow.right {
+      background: radial-gradient(circle, rgba(236, 72, 153, 0.08) 0%, rgba(0,0,0,0) 60%);
+      top: auto; bottom: -20vh; left: auto; right: -20vw;
+    }
+
+    /* Layout Components */
+    h1, h2, h3, h4 { font-family: "Outfit", sans-serif; line-height: 1.2; }
+    .section-padding { padding: 8rem 5%; scroll-margin-top: calc(var(--header-h) + 14px); }
+    .container { max-width: var(--container); margin: 0 auto; width: 100%; }
+    .section-title { text-align: center; margin-bottom: 4rem; }
+    .section-title h2 { font-size: clamp(1.8rem, 6vw, 3.5rem); font-weight: 800; margin-bottom: 1rem; }
+    .section-title p { color: var(--text-muted); max-width: 640px; margin: 0 auto; font-size: clamp(0.95rem, 2vw, 1.1rem); }
+
+    /* Navbar */
+    header {
+      position: fixed; width: 100%; top: 0; padding: 1.1rem 5%; display: flex;
+      justify-content: space-between; align-items: center; background: rgba(3, 3, 5, 0.7);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border);
+      z-index: 2000; transition: padding .3s ease, background .3s ease, box-shadow .3s ease; min-height: var(--header-h);
+    }
+    .logo {
+      font-family: "Outfit", sans-serif; font-size: clamp(1.4rem, 4vw, 1.8rem);
+      font-weight: 800; color: var(--text-main); text-decoration: none; display: flex; align-items: center; gap: 10px;
+    }
+    .logo i { color: var(--primary); font-size: 1.5rem; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.96rem;
+      transition: var(--transition); position: relative; padding-bottom: 4px;
+    }
+    .nav-links a::after {
+      content: ""; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary)); transition: width .25s ease;
+    }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--text-main); }
+    .nav-links a:hover::after, .nav-links a[aria-current="page"]::after { width: 100%; }
+    .btn-outline {
+      background: transparent; color: var(--text-main); border: 1px solid var(--glass-border);
+      padding: 0.65rem 1.4rem; border-radius: 999px; text-decoration: none; font-weight: 600;
+      transition: var(--transition); display: inline-block; text-align: center;
+    }
+    .btn-outline:hover { background: var(--text-main); color: var(--bg-deep); }
+    .menu-toggle { display: none; color: var(--text-main); font-size: 1.4rem; cursor: pointer; border: none; background: transparent; padding: 5px; }
+
+    /* Buttons */
+    .btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; padding: 1rem 2.4rem; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 1.03rem; transition: var(--transition); border: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3); cursor: pointer; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 35px rgba(236, 72, 153, 0.35); }
+    .btn-large { padding: 1rem 2.5rem; font-size: 1.05rem; }
+
+    /* Page Header */
+    .page-header { padding: calc(var(--header-h) + 6rem) 5% 5rem; text-align: center; position: relative; border-bottom: 1px solid var(--glass-border); background: linear-gradient(to bottom, rgba(3,3,5,0) 0%, var(--bg-alt) 100%); }
+    .page-header h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; margin-bottom: 1.5rem; }
+    .page-header p { color: var(--text-muted); font-size: clamp(1.05rem, 2vw, 1.2rem); max-width: 700px; margin: 0 auto; }
+
+    /* Services Grid */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .service-card { background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 3rem 2.5rem; transition: var(--transition); position: relative; overflow: hidden; z-index: 1; text-align: left; display: flex; flex-direction: column; }
+    .service-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), transparent); opacity: 0; transition: var(--transition); z-index: -1; }
+    .service-card:hover { transform: translateY(-7px); border-color: rgba(99, 102, 241, 0.4); box-shadow: var(--shadow-soft); }
+    .service-card:hover::before { opacity: 1; }
+    .icon-wrapper { width: 55px; height: 55px; background: rgba(255, 255, 255, 0.05); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--primary); margin: 0 0 1.5rem 0; border: 1px solid var(--glass-border); transition: var(--transition); }
+    .service-card:hover .icon-wrapper { background: var(--primary); color: #fff; transform: scale(1.05) rotate(5deg); }
+    .service-card h3 { font-size: 1.4rem; margin-bottom: 1rem; }
+    .service-card p { color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; flex-grow: 1; }
+    .service-special { grid-column: 1 / -1; max-width: 900px; justify-self: center; text-align: center; width: 100%; align-items: center; }
+    .service-special .icon-wrapper { margin: 0 auto 1.5rem auto; }
+    
+    .service-link { color: var(--text-main); text-decoration: none; font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition); }
+    .service-link:hover { color: var(--primary); gap: 12px; }
+
+    /* Process Grid */
+    .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-top: 4rem; }
+    .process-card { padding: 2.5rem 2rem; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: var(--radius); text-align: center; transition: var(--transition); position: relative; }
+    .process-card:hover { background: rgba(255, 255, 255, 0.05); border-color: rgba(99, 102, 241, 0.3); }
+    .process-step { width: 50px; height: 50px; background: rgba(99, 102, 241, 0.1); color: var(--primary); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.3rem; margin: 0 auto 1.5rem; font-family: "Outfit", sans-serif; }
+    .process-card h3 { font-size: 1.2rem; margin-bottom: 0.8rem; }
+    .process-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+
+    /* CTA Banner */
+    .cta-banner { background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1)); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 4rem 5%; text-align: center; margin-top: 5rem; position: relative; overflow: hidden; }
+    .cta-banner h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem; }
+    .cta-banner p { color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem; max-width: 600px; margin-inline: auto; }
+
+    /* Footer */
+    footer { background: #010101; padding: 5rem 5% 2rem; border-top: 1px solid var(--glass-border); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.6rem; margin-bottom: 3.2rem; }
+    .footer-about p { color: var(--text-muted); margin-top: 1rem; margin-bottom: 1.5rem; font-size: .95rem; max-width: 460px; }
+    .social-links { display: flex; gap: .7rem; }
+    .social-links a { width: 38px; height: 38px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; transition: var(--transition); font-size: .9rem; }
+    .social-links a:hover { background: var(--primary); transform: translateY(-2px); }
+    .footer-links h4 { font-size: 1.08rem; margin-bottom: 1rem; color: #fff; }
+    .footer-links ul { list-style: none; }
+    .footer-links li { margin-bottom: .75rem; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; transition: var(--transition); font-size: .95rem; }
+    .footer-links a:hover { color: var(--primary); padding-left: 4px; }
+    .copyright { text-align: center; padding-top: 1.7rem; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: .85rem; }
+
+    /* Extras */
+    .scroll-top-btn { position: fixed; bottom: 30px; right: 30px; width: 45px; height: 45px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border: none; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-soft); opacity: 0; visibility: hidden; transform: translateY(20px); transition: var(--transition); z-index: 1500; }
+    .scroll-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity .8s ease-out, transform .8s ease-out; will-change: opacity, transform; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: .08s; }
+    .delay-2 { transition-delay: .16s; }
+    .delay-3 { transition-delay: .24s; }
+
+    /* Responsive */
+    @media (max-width: 1100px) { .services-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } .service-special { grid-column: 1 / -1; justify-self: stretch; max-width: none; } }
+    @media (max-width: 992px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.2rem; } }
+    @media (max-width: 768px) { .hidden-mobile { display: none !important; } .section-padding { padding: 5rem 5%; } .ambient-glow, .ambient-glow.right { width: 300px; height: 300px; } .nav-links { position: fixed; top: var(--header-h); left: -100%; width: 100%; height: calc(100vh - var(--header-h)); background: rgba(3, 3, 5, 0.98); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); flex-direction: column; align-items: center; justify-content: center; transition: left .35s ease; gap: 1.7rem; } .nav-links.active { left: 0; } .menu-toggle { display: block; } .services-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; gap: 1.8rem; } }
+    @media (max-width: 480px) { .section-padding { padding: 3.2rem 5%; } .process-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">মূল কনটেন্টে যান</a>
+
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="ambient-glow right" aria-hidden="true"></div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <a href="https://sites.google.com/view/bangladesh-hub/" target="_top" class="logo" aria-label="BeRaW Home">
+      <i class="fa-solid fa-bolt" aria-hidden="true"></i> BeRaW
+    </a>
+
+    <!-- Navigation Menu (Target Top Added & Absolute Links) -->
+    <nav aria-label="Primary Navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="https://sites.google.com/view/bangladesh-hub/" target="_top">হোম</a></li>
+        <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top" aria-current="page">সার্ভিস</a></li>
+        <li><a href="https://sites.google.com/view/bangladesh-hub/pricing" target="_top">প্ল্যানসমূহ</a></li>
+        <li><a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top">যোগাযোগ</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="btn-outline hidden-mobile">প্রজেক্ট শুরু করুন</a>
+
+    <button class="menu-toggle" id="mobile-menu" aria-label="মোবাইল মেনু চালু/বন্ধ করুন" aria-expanded="false" aria-controls="nav-links">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Services Page Header -->
+    <section class="page-header fade-up">
+      <div class="container">
+        <h1>আমাদের <span class="gradient-text">সেবাসমূহ</span></h1>
+        <p>আপনার ব্যবসাকে পরবর্তী ধাপে নিয়ে যেতে আমাদের রয়েছে এক্সক্লুসিভ ডিজিটাল সলিউশন। ডিজাইন থেকে শুরু করে ডেভেলপমেন্ট এবং অটোমেশন—সবকিছুই পাচ্ছেন এক জায়গায়।</p>
+      </div>
+    </section>
+
+    <!-- Main Services Grid -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="services-grid">
+          
+          <article class="service-card fade-up delay-1">
+            <div class="icon-wrapper"><i class="fa-solid fa-video" aria-hidden="true"></i></div>
+            <h3>Video Editing</h3>
+            <p>ইউটিউব, কমার্শিয়াল বা সোশ্যাল মিডিয়ার জন্য সিনেম্যাটিক ভিডিও এডিটিং ও প্রফেশনাল কালার গ্রেডিং। আমরা আপনার সাধারণ ফুটেজকে অসাধারণ ভিজ্যুয়াল গল্পে রূপান্তর করি।</p>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="service-link">সার্ভিসটি সম্পর্কে জানুন <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          
+          <article class="service-card fade-up delay-2">
+            <div class="icon-wrapper"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+            <h3>Digital Marketing</h3>
+            <p>টার্গেটেড অ্যাড ক্যাম্পেইন এবং SEO এর মাধ্যমে আপনার ব্র্যান্ডের রিচ এবং সেলস বৃদ্ধি করুন। ডেটা-ড্রিভেন স্ট্র্যাটেজি ব্যবহার করে আমরা সঠিক কাস্টমারের কাছে পৌঁছাই।</p>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="service-link">সার্ভিসটি সম্পর্কে জানুন <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          
+          <article class="service-card fade-up delay-3">
+            <div class="icon-wrapper"><i class="fa-solid fa-hashtag" aria-hidden="true"></i></div>
+            <h3>Social Management</h3>
+            <p>আপনার ফেসবুক, ইনস্টাগ্রাম পেজ প্রফেশনালি ম্যানেজ করা এবং অর্গানিক এনগেজমেন্ট বৃদ্ধি করা। কনটেন্ট প্ল্যানিং থেকে শুরু করে রেগুলার পোস্টিং আমরাই সামলাই।</p>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="service-link">সার্ভিসটি সম্পর্কে জানুন <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          
+          <article class="service-card fade-up delay-1">
+            <div class="icon-wrapper"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></div>
+            <h3>Graphics Design</h3>
+            <p>লোগো, ব্র্যান্ড আইডেন্টিটি এবং সোশ্যাল মিডিয়ার জন্য আই-ক্যাচিং ও আধুনিক ভিজ্যুয়াল ডিজাইন। আপনার ব্র্যান্ডের প্রথম ইম্প্রেশনকে আমরা দীর্ঘস্থায়ী করি।</p>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="service-link">সার্ভিসটি সম্পর্কে জানুন <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          
+          <article class="service-card fade-up delay-2">
+            <div class="icon-wrapper"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+            <h3>AI Automation</h3>
+            <p>স্মার্ট চ্যাটবট এবং এআই ইন্টিগ্রেশনের মাধ্যমে কাস্টমার সাপোর্ট ও দৈনন্দিন কাজ স্বয়ংক্রিয় করুন। সময় বাঁচান এবং ব্যবসার প্রোডাক্টিভিটি বহুগুণ বৃদ্ধি করুন।</p>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="service-link">সার্ভিসটি সম্পর্কে জানুন <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          
+          <article class="service-card fade-up delay-3">
+            <div class="icon-wrapper"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+            <h3>Web App Build</h3>
+            <p>ব্যবসার নির্দিষ্ট চাহিদা অনুযায়ী কাস্টম ও হাই-পারফরম্যান্স ওয়েব অ্যাপ্লিকেশন তৈরি। ইউজার এক্সপেরিয়েন্স এবং সিকিউরিটিকে আমরা সর্বোচ্চ গুরুত্ব দিই।</p>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="service-link">সার্ভিসটি সম্পর্কে জানুন <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          
+          <article class="service-card service-special fade-up delay-1">
+            <div class="icon-wrapper"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <h3>Web Development</h3>
+            <p>আধুনিক ফ্রেমওয়ার্ক ব্যবহার করে দ্রুত, রেসপন্সিভ এবং SEO-অপটিমাইজড প্রফেশনাল ওয়েবসাইট ডেভেলপমেন্ট। আপনার ব্যবসার একটি শক্তিশালী ডিজিটাল পরিচয় তৈরি করুন যা যেকোনো ডিভাইস থেকে দারুণ দেখায়।</p>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="service-link">সার্ভিসটি সম্পর্কে জানুন <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Working Process Section -->
+    <section class="section-padding bg-alternate">
+      <div class="container">
+        <div class="section-title fade-up">
+          <h2>আমাদের <span class="gradient-text">কাজের প্রক্রিয়া</span></h2>
+          <p>আমরা একটি স্বচ্ছ এবং সুনির্দিষ্ট পদ্ধতি অনুসরণ করে আপনার প্রজেক্টকে বাস্তবে রূপান্তর করি।</p>
+        </div>
+        
+        <div class="process-grid">
+          <div class="process-card fade-up delay-1">
+            <div class="process-step">১</div>
+            <h3>আলোচনা ও বিশ্লেষণ</h3>
+            <p>প্রথমে আমরা আপনার ব্যবসার লক্ষ্য এবং প্রয়োজনগুলো মনোযোগ দিয়ে শুনি এবং একটি রূপরেখা তৈরি করি।</p>
+          </div>
+          <div class="process-card fade-up delay-2">
+            <div class="process-step">২</div>
+            <h3>কৌশল নির্ধারণ</h3>
+            <p>গবেষণা ও বিশ্লেষণের পর, আপনার প্রজেক্টের জন্য সবচেয়ে কার্যকর ডিজিটাল স্ট্র্যাটেজি তৈরি করা হয়।</p>
+          </div>
+          <div class="process-card fade-up delay-3">
+            <div class="process-step">৩</div>
+            <h3>ডিজাইন ও ডেভেলপমেন্ট</h3>
+            <p>আমাদের এক্সপার্ট টিম সর্বশেষ প্রযুক্তি ব্যবহার করে আপনার প্রজেক্টের মূল কাজ সম্পন্ন করে।</p>
+          </div>
+          <div class="process-card fade-up delay-1">
+            <div class="process-step">৪</div>
+            <h3>ফাইনাল ডেলিভারি</h3>
+            <p>কঠোর টেস্টিং এবং রিভিশনের পর, আমরা প্রজেক্টটি আপনার হাতে নিখুঁতভাবে তুলে দিই।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div class="container fade-up delay-2">
+      <div class="cta-banner">
+        <h2>আপনার পরবর্তী প্রজেক্ট নিয়ে ভাবছেন?</h2>
+        <p>আমাদের এক্সপার্ট টিমের সাথে আজই বিনামূল্যে কনসালটেশন বুক করুন এবং আপনার ব্যবসাকে ডিজিটালি স্বয়ংসম্পূর্ণ করুন।</p>
+        <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="btn-primary btn-large">
+          আমাদের সাথে কথা বলুন <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Extra spacing before footer -->
+    <div style="height: 5rem;"></div>
+
+  </main>
+
+  <!-- Footer Section (Target Top Added) -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="https://sites.google.com/view/bangladesh-hub/" target="_top" class="logo"><i class="fa-solid fa-bolt" aria-hidden="true"></i> BeRaW</a>
+          <p>আমরা একটি প্রিমিয়াম ডিজিটাল এজেন্সি যা আধুনিক টেকনোলজি ব্যবহার করে ব্র্যান্ডের ডিজিটাল উপস্থিতি শক্তিশালী করে।</p>
+          <div class="social-links">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>কুইক লিংকস</h4>
+          <ul>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/" target="_top">হোমপেজ</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">সেবা</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/pricing" target="_top">প্রাইসিং</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top">যোগাযোগ</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>আমাদের সার্ভিস</h4>
+          <ul>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">ওয়েব ডেভেলপমেন্ট</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">এআই অটোমেশন</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">ডিজিটাল মার্কেটিং</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">ভিডিও এডিটিং</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>লিগ্যাল</h4>
+          <ul>
+            <li><a href="#" target="_top">Privacy Policy</a></li>
+            <li><a href="#" target="_top">Terms of Service</a></li>
+            <li><a href="#" target="_top">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 BeRaW Digital Agency. All Rights Reserved. Crafted in Bangladesh.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="উপরে যান">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script>
+    (() => {
+      "use strict";
+      const body = document.body, header = document.getElementById("header"), mobileMenu = document.getElementById("mobile-menu"), navLinks = document.getElementById("nav-links"), navAnchors = [...document.querySelectorAll('.nav-links a')], menuIcon = mobileMenu?.querySelector("i"), scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      const setMenuState = (open) => {
+        if (!navLinks || !mobileMenu || !menuIcon) return;
+        navLinks.classList.toggle("active", open); mobileMenu.setAttribute("aria-expanded", String(open));
+        menuIcon.classList.toggle("fa-bars", !open); menuIcon.classList.toggle("fa-xmark", open);
+        body.style.overflow = open ? "hidden" : "";
+      };
+
+      mobileMenu?.addEventListener("click", (e) => { e.stopPropagation(); setMenuState(!navLinks.classList.contains("active")); });
+      document.addEventListener("click", (e) => { if (navLinks.classList.contains("active") && !header.contains(e.target)) setMenuState(false); });
+      navAnchors.forEach((a) => a.addEventListener("click", () => setMenuState(false)));
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenuState(false); });
+      scrollTopBtn?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+      let ticking = false;
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const sp = window.scrollY, compact = sp > 40;
+            header.style.background = compact ? "rgba(3, 3, 5, 0.95)" : "rgba(3, 3, 5, 0.7)";
+            header.style.boxShadow = compact ? "0 4px 30px rgba(0,0,0,.5)" : "none";
+            header.style.padding = compact ? "0.75rem 5%" : "1.1rem 5%";
+            scrollTopBtn.classList.toggle("visible", sp > 500);
+            ticking = false;
+          }); ticking = true;
+        }
+      }, { passive: true });
+
+      const fadeEls = document.querySelectorAll(".fade-up");
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("visible"); revealObserver.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      fadeEls.forEach((el) => revealObserver.observe(el));
+    })();
+  </script>
+</body>
+</html>

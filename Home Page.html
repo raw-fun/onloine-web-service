@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#030305" />
+  <meta name="description" content="BeRaW - Premium Digital Agency offering Video Editing, Web Development, SEO, Digital Marketing, and AI Automation services." />
+  <meta name="keywords" content="Digital Agency, Video Editing, Web Development, SEO, AI Automation, Bangladesh, BeRaW" />
+  <meta name="author" content="BeRaW Digital Agency" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://sites.google.com/view/bangladesh-hub/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BeRaW | Premium Digital Agency" />
+  <meta property="og:description" content="Scale your business with BeRaW’s premium digital services." />
+  <meta property="og:url" content="https://sites.google.com/view/bangladesh-hub/" />
+  <meta property="og:site_name" content="BeRaW" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BeRaW | Premium Digital Agency" />
+  <meta name="twitter:description" content="Premium digital solutions for modern brands." />
+
+  <title>BeRaW | Premium Digital Agency - Home</title>
+
+  <!-- Performance: Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    :root {
+      --bg-deep: #030305;
+      --bg-alt: rgba(25, 25, 35, 0.3);
+      --bg-card: rgba(25, 25, 35, 0.6);
+      --primary: #6366f1;
+      --secondary: #ec4899;
+      --success: #10b981;
+      --danger: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --glass-bg: rgba(255, 255, 255, 0.03);
+      --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      --container: 1300px;
+      --radius: 20px;
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.25);
+      --header-h: 76px;
+    }
+
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-main);
+      font-family: "Plus Jakarta Sans", sans-serif;
+      overflow-x: hidden;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { animation: none !important; transition: none !important; }
+    }
+
+    /* Accessibility */
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 2px solid var(--primary); outline-offset: 4px; border-radius: 6px;
+    }
+    .sr-only {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: absolute; top: -40px; left: 10px; background: #fff; color: #000;
+      padding: 8px 12px; border-radius: 8px; z-index: 3000; text-decoration: none;
+      font-weight: 700; transition: top 0.3s;
+    }
+    .skip-link:focus { top: 10px; }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-deep); }
+    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--secondary); }
+
+    /* Utility */
+    .bg-alternate { background: var(--bg-alt); }
+    .w-full { width: 100%; }
+    .flex-center { display: flex; justify-content: center; align-items: center; }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;
+    }
+
+    /* Background Effects */
+    .ambient-glow {
+      position: fixed; width: 50vw; height: 50vw;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(0,0,0,0) 60%);
+      top: -20vh; left: -20vw; border-radius: 50%; z-index: -1; pointer-events: none; filter: blur(2px);
+    }
+    .ambient-glow.right {
+      background: radial-gradient(circle, rgba(236, 72, 153, 0.08) 0%, rgba(0,0,0,0) 60%);
+      top: auto; bottom: -20vh; left: auto; right: -20vw;
+    }
+
+    /* Layout Components */
+    h1, h2, h3, h4 { font-family: "Outfit", sans-serif; line-height: 1.2; }
+    .section-padding { padding: 8rem 5%; scroll-margin-top: calc(var(--header-h) + 14px); }
+    .container { max-width: var(--container); margin: 0 auto; width: 100%; }
+    .section-title { text-align: center; margin-bottom: 4rem; }
+    .section-title h2 { font-size: clamp(1.8rem, 6vw, 3.5rem); font-weight: 800; margin-bottom: 1rem; }
+    .section-title p { color: var(--text-muted); max-width: 640px; margin: 0 auto; font-size: clamp(0.95rem, 2vw, 1.1rem); }
+
+    /* Navbar */
+    header {
+      position: fixed; width: 100%; top: 0; padding: 1.1rem 5%; display: flex;
+      justify-content: space-between; align-items: center; background: rgba(3, 3, 5, 0.7);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border);
+      z-index: 2000; transition: padding .3s ease, background .3s ease, box-shadow .3s ease; min-height: var(--header-h);
+    }
+    .logo {
+      font-family: "Outfit", sans-serif; font-size: clamp(1.4rem, 4vw, 1.8rem);
+      font-weight: 800; color: var(--text-main); text-decoration: none; display: flex; align-items: center; gap: 10px;
+    }
+    .logo i { color: var(--primary); font-size: 1.5rem; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.96rem;
+      transition: var(--transition); position: relative; padding-bottom: 4px;
+    }
+    .nav-links a::after {
+      content: ""; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary)); transition: width .25s ease;
+    }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--text-main); }
+    .nav-links a:hover::after, .nav-links a[aria-current="page"]::after { width: 100%; }
+    .btn-outline {
+      background: transparent; color: var(--text-main); border: 1px solid var(--glass-border);
+      padding: 0.65rem 1.4rem; border-radius: 999px; text-decoration: none; font-weight: 600;
+      transition: var(--transition); display: inline-block; text-align: center;
+    }
+    .btn-outline:hover { background: var(--text-main); color: var(--bg-deep); }
+    .menu-toggle { display: none; color: var(--text-main); font-size: 1.4rem; cursor: pointer; border: none; background: transparent; padding: 5px; }
+
+    /* Hero */
+    .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: calc(var(--header-h) + 3rem) 5% 4rem; position: relative; }
+    .hero-content { max-width: 900px; z-index: 2; }
+    .hero-badge { display: inline-block; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); color: #818cf8; padding: .5rem 1.2rem; border-radius: 30px; font-size: clamp(.75rem, 2vw, .9rem); font-weight: 700; margin-bottom: 2rem; letter-spacing: .4px; }
+    .hero h1 { font-size: clamp(2rem, 8vw, 5.5rem); font-weight: 800; margin-bottom: 1.5rem; letter-spacing: -.8px; }
+    .hero p { font-size: clamp(1rem, 2.5vw, 1.3rem); color: var(--text-muted); margin-bottom: 3rem; max-width: 700px; margin-inline: auto; }
+    .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; padding: 1rem 2.4rem; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 1.03rem; transition: var(--transition); border: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3); cursor: pointer; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 35px rgba(236, 72, 153, 0.35); }
+    .btn-primary:disabled { opacity: .75; cursor: not-allowed; transform: none; }
+    .btn-large { padding: 1rem 2.5rem; font-size: 1.05rem; }
+
+    /* Stats */
+    .stats-wrapper { background: var(--glass-bg); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); padding: 4rem 5%; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2.3rem 1.4rem; text-align: center; max-width: 1200px; margin: 0 auto; }
+    .stat-item h3 { font-size: clamp(2.3rem, 5vw, 3rem); font-weight: 800; margin-bottom: .3rem; }
+    .stat-item p { color: var(--primary); font-weight: 700; font-size: clamp(.95rem, 2vw, 1.1rem); }
+
+    /* Services Grid */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .service-card, .pricing-card, .contact-form { background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: var(--radius); }
+    .service-card { padding: 2.4rem 2rem; transition: var(--transition); position: relative; overflow: hidden; z-index: 1; text-align: left; display: flex; flex-direction: column; }
+    .service-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), transparent); opacity: 0; transition: var(--transition); z-index: -1; }
+    .service-card:hover { transform: translateY(-7px); border-color: rgba(99, 102, 241, 0.4); }
+    .service-card:hover::before { opacity: 1; }
+    .icon-wrapper { width: 48px; height: 48px; background: rgba(255, 255, 255, 0.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--primary); margin: 0 0 1.2rem 0; border: 1px solid var(--glass-border); transition: var(--transition); }
+    .service-card:hover .icon-wrapper { background: var(--primary); color: #fff; transform: scale(1.05) rotate(4deg); }
+    .service-card h3 { font-size: 1.25rem; margin-bottom: .8rem; }
+    .service-card p { color: var(--text-muted); font-size: .92rem; line-height: 1.6; }
+    .service-special { grid-column: 1 / -1; max-width: 850px; justify-self: center; text-align: center; width: 100%; align-items: center; }
+    .service-special .icon-wrapper { margin: 0 auto 1.2rem auto; }
+
+    /* Pricing */
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; align-items: stretch; }
+    .pricing-card { padding: 3rem 2rem; transition: var(--transition); position: relative; overflow: hidden; text-align: center; display: flex; flex-direction: column; height: 100%; }
+    .pricing-card.popular { border-color: var(--primary); background: rgba(99, 102, 241, 0.07); transform: scale(1.04); z-index: 2; }
+    .popular-badge { position: absolute; top: 24px; right: -38px; background: var(--primary); color: #fff; padding: 5px 42px; transform: rotate(45deg); font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .3px; }
+    .pricing-card:hover { transform: translateY(-8px); border-color: var(--primary); box-shadow: var(--shadow-soft); }
+    .pricing-card.popular:hover { transform: scale(1.04) translateY(-8px); }
+    .plan-name { font-size: 1.5rem; font-weight: 700; margin-bottom: .5rem; }
+    .plan-price { font-size: 2.65rem; font-weight: 800; margin-bottom: .5rem; font-family: "Outfit", sans-serif; }
+    .plan-price span { font-size: .9rem; color: var(--text-muted); font-weight: 400; }
+    .plan-desc { color: var(--text-muted); font-size: .9rem; margin-bottom: 2rem; min-height: 45px; }
+    .features-list { list-style: none; text-align: left; margin-bottom: 2.2rem; flex-grow: 1; }
+    .features-list li { margin-bottom: .95rem; display: flex; gap: 12px; font-size: .95rem; line-height: 1.45; }
+    .features-list li i { color: var(--primary); margin-top: 3px; }
+    .features-list li.disabled { color: var(--text-muted); opacity: .55; }
+    .features-list li.disabled i { color: var(--text-muted); }
+
+    /* Contact */
+    .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+    .contact-info h2 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.2rem; }
+    .contact-info p { color: var(--text-muted); margin-bottom: 2rem; font-size: .96rem; }
+    .contact-list { list-style: none; }
+    .contact-list li { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem; font-size: 1.02rem; }
+    .contact-list i { color: var(--primary); background: rgba(99, 102, 241, 0.1); padding: .95rem; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-form { padding: 2.2rem; }
+    .form-group { margin-bottom: 1rem; }
+    .form-label { display: inline-block; margin-bottom: .45rem; font-size: .9rem; color: var(--text-muted); font-weight: 600; }
+    .form-control { width: 100%; padding: .9rem 1.05rem; background: rgba(0, 0, 0, 0.3); border: 1px solid var(--glass-border); border-radius: 12px; color: #fff; font-family: inherit; font-size: .95rem; transition: var(--transition); }
+    .form-control:hover { border-color: rgba(99, 102, 241, 0.5); }
+    .form-control:focus { outline: none; border-color: var(--primary); background: rgba(0, 0, 0, 0.45); box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); }
+    .form-control[aria-invalid="true"] { border-color: var(--danger); box-shadow: 0 0 0 3px rgba(239, 68, 68, .15); }
+    .error-text { display: none; margin-top: .35rem; font-size: .84rem; color: #fca5a5; }
+    .error-text.active { display: block; }
+    textarea.form-control { height: 120px; resize: vertical; }
+
+    /* Footer */
+    footer { background: #010101; padding: 5rem 5% 2rem; border-top: 1px solid var(--glass-border); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.6rem; margin-bottom: 3.2rem; }
+    .footer-about p { color: var(--text-muted); margin-top: 1rem; margin-bottom: 1.5rem; font-size: .95rem; max-width: 460px; }
+    .social-links { display: flex; gap: .7rem; }
+    .social-links a { width: 38px; height: 38px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; transition: var(--transition); font-size: .9rem; }
+    .social-links a:hover { background: var(--primary); transform: translateY(-2px); }
+    .footer-links h4 { font-size: 1.08rem; margin-bottom: 1rem; color: #fff; }
+    .footer-links ul { list-style: none; }
+    .footer-links li { margin-bottom: .75rem; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; transition: var(--transition); font-size: .95rem; }
+    .footer-links a:hover { color: var(--primary); padding-left: 4px; }
+    .copyright { text-align: center; padding-top: 1.7rem; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: .85rem; }
+
+    /* Extras */
+    .scroll-top-btn { position: fixed; bottom: 30px; right: 30px; width: 45px; height: 45px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border: none; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-soft); opacity: 0; visibility: hidden; transform: translateY(20px); transition: var(--transition); z-index: 1500; }
+    .scroll-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity .8s ease-out, transform .8s ease-out; will-change: opacity, transform; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: .08s; }
+    .delay-2 { transition-delay: .16s; }
+    .delay-3 { transition-delay: .24s; }
+
+    /* Responsive */
+    @media (max-width: 1100px) { .services-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } .service-special { grid-column: 1 / -1; justify-self: stretch; max-width: none; } }
+    @media (max-width: 992px) { .contact-container { grid-template-columns: 1fr; gap: 2.8rem; } .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.2rem; } .pricing-card.popular { transform: scale(1); } .pricing-card.popular:hover { transform: translateY(-8px); } }
+    @media (max-width: 768px) { .hidden-mobile { display: none !important; } .section-padding { padding: 5rem 5%; } .hero { padding-top: calc(var(--header-h) + 2rem); padding-bottom: 3rem; } .ambient-glow, .ambient-glow.right { width: 300px; height: 300px; } .nav-links { position: fixed; top: var(--header-h); left: -100%; width: 100%; height: calc(100vh - var(--header-h)); background: rgba(3, 3, 5, 0.98); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); flex-direction: column; align-items: center; justify-content: center; transition: left .35s ease; gap: 1.7rem; } .nav-links.active { left: 0; } .menu-toggle { display: block; } .services-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; gap: 1.8rem; } }
+    @media (max-width: 480px) { .section-padding { padding: 3.2rem 5%; } .hero-buttons { flex-direction: column; width: 100%; gap: .9rem; } .stats-grid { grid-template-columns: 1fr; gap: 1.8rem; } }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">মূল কনটেন্টে যান</a>
+
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="ambient-glow right" aria-hidden="true"></div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <!-- লোগোতে ক্লিক করলে হোম পেজেই রিলোড হবে বা টপে যাবে -->
+    <a href="https://sites.google.com/view/bangladesh-hub/" target="_top" class="logo" aria-label="BeRaW Home">
+      <i class="fa-solid fa-bolt" aria-hidden="true"></i> BeRaW
+    </a>
+
+    <!-- Navigation Menu (Target Top Added & Absolute Links) -->
+    <nav aria-label="Primary Navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="https://sites.google.com/view/bangladesh-hub/" target="_top" aria-current="page">হোম</a></li>
+        <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">সার্ভিস</a></li>
+        <li><a href="https://sites.google.com/view/bangladesh-hub/pricing" target="_top">প্ল্যানসমূহ</a></li>
+        <li><a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top">যোগাযোগ</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="btn-outline hidden-mobile">প্রজেক্ট শুরু করুন</a>
+
+    <button class="menu-toggle" id="mobile-menu" aria-label="মোবাইল মেনু চালু/বন্ধ করুন" aria-expanded="false" aria-controls="nav-links">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-content fade-up">
+        <p class="hero-badge">🚀 #১ ডিজিটাল সলিউশন এজেন্সি</p>
+        <h1 id="hero-title">আপনার আইডিয়া, আমাদের <span class="gradient-text">প্রযুক্তি ও ক্রিয়েটিভিটি</span></h1>
+        <p>আমরা শুধুমাত্র সার্ভিস দিই না, আমরা আপনার ব্যবসার জন্য এমন ডিজিটাল এক্সপেরিয়েন্স তৈরি করি যা আপনার ব্র্যান্ডকে প্রতিযোগীদের থেকে আলাদা করে। আপনার গ্রোথ পার্টনার হতে আমরা প্রস্তুত।</p>
+
+        <div class="hero-buttons">
+          <a href="https://sites.google.com/view/bangladesh-hub/services" target="_top" class="btn-primary btn-large">
+            আমাদের সার্ভিস দেখুন <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="btn-outline btn-large">ফ্রি কনসালটেশন</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-wrapper" id="statistics" aria-label="Agency Statistics">
+      <div class="stats-grid">
+        <div class="stat-item fade-up delay-1">
+          <h3 class="counter" data-target="150" data-suffix="+">0</h3>
+          <p>প্রজেক্ট কমপ্লিট</p>
+        </div>
+        <div class="stat-item fade-up delay-2">
+          <h3 class="counter" data-target="85" data-suffix="+">0</h3>
+          <p>হ্যাপি ক্লায়েন্ট</p>
+        </div>
+        <div class="stat-item fade-up delay-3">
+          <h3 class="counter" data-target="7">0</h3>
+          <p>এক্সপার্ট সার্ভিস</p>
+        </div>
+        <div class="stat-item fade-up delay-3">
+          <h3 class="counter" data-target="5" data-suffix="+">0</h3>
+          <p>বছরের অভিজ্ঞতা</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="section-padding" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-title fade-up">
+          <h2 id="services-title">আমাদের <span class="gradient-text">সেবাসমূহ</span></h2>
+          <p>আপনার ব্যবসাকে ডিজিটালি স্বয়ংসম্পূর্ণ করতে আমাদের রয়েছে ৭টি এক্সক্লুসিভ সার্ভিস ক্যাটাগরি।</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card fade-up delay-1">
+            <div class="icon-wrapper"><i class="fa-solid fa-video" aria-hidden="true"></i></div>
+            <h3>Video Editing</h3>
+            <p>ইউটিউব, কমার্শিয়াল বা সোশ্যাল মিডিয়ার জন্য সিনেম্যাটিক ভিডিও এডিটিং ও প্রফেশনাল কালার গ্রেডিং।</p>
+          </article>
+          <article class="service-card fade-up delay-2">
+            <div class="icon-wrapper"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+            <h3>Digital Marketing</h3>
+            <p>টার্গেটেড অ্যাড ক্যাম্পেইন এবং SEO এর মাধ্যমে আপনার ব্র্যান্ডের রিচ এবং সেলস বৃদ্ধি করুন।</p>
+          </article>
+          <article class="service-card fade-up delay-3">
+            <div class="icon-wrapper"><i class="fa-solid fa-hashtag" aria-hidden="true"></i></div>
+            <h3>Social Management</h3>
+            <p>আপনার ফেসবুক, ইনস্টাগ্রাম পেজ প্রফেশনালি ম্যানেজ করা এবং অর্গানিক এনগেজমেন্ট বৃদ্ধি করা।</p>
+          </article>
+          <article class="service-card fade-up delay-1">
+            <div class="icon-wrapper"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></div>
+            <h3>Graphics Design</h3>
+            <p>লোগো, ব্র্যান্ড আইডেন্টিটি এবং সোশ্যাল মিডিয়ার জন্য আই-ক্যাচিং ও আধুনিক ভিজ্যুয়াল ডিজাইন।</p>
+          </article>
+          <article class="service-card fade-up delay-2">
+            <div class="icon-wrapper"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+            <h3>AI Automation</h3>
+            <p>স্মার্ট চ্যাটবট এবং এআই ইন্টিগ্রেশনের মাধ্যমে কাস্টমার সাপোর্ট ও দৈনন্দিন কাজ স্বয়ংক্রিয় করুন।</p>
+          </article>
+          <article class="service-card fade-up delay-3">
+            <div class="icon-wrapper"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+            <h3>Web App Build</h3>
+            <p>ব্যবসার চাহিদা অনুযায়ী কাস্টম ও হাই-পারফরম্যান্স ওয়েব অ্যাপ্লিকেশন তৈরি।</p>
+          </article>
+          <article class="service-card service-special fade-up delay-1">
+            <div class="icon-wrapper"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <h3>Web Development</h3>
+            <p>আধুনিক ফ্রেমওয়ার্ক ব্যবহার করে দ্রুত, রেসপন্সিভ এবং SEO-অপটিমাইজড প্রফেশনাল ওয়েবসাইট ডেভেলপমেন্ট।</p>
+          </article>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;" class="fade-up delay-2">
+            <a href="https://sites.google.com/view/bangladesh-hub/services" target="_top" class="btn-primary">সব সার্ভিস বিস্তারিত দেখুন</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Overview Section -->
+    <section class="section-padding bg-alternate" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-title fade-up">
+          <h2 id="pricing-title">সার্ভিস <span class="gradient-text">প্ল্যানসমূহ</span></h2>
+          <p>আপনার ব্যবসার পরিধি এবং লক্ষ্য অনুযায়ী সঠিক প্যাকেজটি নির্বাচন করুন।</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card fade-up delay-1">
+            <h3 class="plan-name">Basic</h3>
+            <p class="plan-price">$১৯৯<span> / প্রজেক্ট থেকে</span></p>
+            <p class="plan-desc">স্টার্টআপ ও ছোট ব্যবসার জন্য আদর্শ সলিউশন।</p>
+            <ul class="features-list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> স্ট্যান্ডার্ড ভিডিও এডিটিং</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> গ্রাফিক ডিজাইন (২টি)</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> বেসিক SEO সেটআপ</li>
+              <li class="disabled"><i class="fa-solid fa-xmark" aria-hidden="true"></i> এআই অটোমেশন সাপোর্ট</li>
+              <li class="disabled"><i class="fa-solid fa-xmark" aria-hidden="true"></i> কাস্টম ওয়েব অ্যাপ বিল্ড</li>
+              <li class="disabled"><i class="fa-solid fa-xmark" aria-hidden="true"></i> ২৪/৭ ডেডিকেটেড সাপোর্ট</li>
+            </ul>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="btn-outline w-full">শুরু করুন</a>
+          </article>
+          <article class="pricing-card popular fade-up delay-2">
+            <div class="popular-badge">Popular</div>
+            <h3 class="plan-name">Professional</h3>
+            <p class="plan-price">$৪৯৯<span> / প্রজেক্ট থেকে</span></p>
+            <p class="plan-desc">মাঝারি এবং ক্রমবর্ধমান ব্র্যান্ডের জন্য সেরা ভ্যালু প্যাক।</p>
+            <ul class="features-list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> প্রিমিয়াম ভিডিও ও মোশন গ্রাফিক্স</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> সোশ্যাল মিডিয়া ফুল ম্যানেজমেন্ট</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> অ্যাডভান্সড ডিজিটাল মার্কেটিং</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> রেসপন্সিভ ওয়েব ডেভেলপমেন্ট</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> বেসিক এআই চ্যাটবট ইন্টিগ্রেশন</li>
+              <li class="disabled"><i class="fa-solid fa-xmark" aria-hidden="true"></i> ফুল এন্টারপ্রাইজ অটোমেশন</li>
+            </ul>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="btn-primary w-full flex-center">পছন্দ করুন</a>
+          </article>
+          <article class="pricing-card fade-up delay-3">
+            <h3 class="plan-name">Custom</h3>
+            <p class="plan-price">Custom</p>
+            <p class="plan-desc">এন্টারপ্রাইজ লেভেলের জন্য সম্পূর্ণ কাস্টমাইজড সলিউশন।</p>
+            <ul class="features-list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> আনলিমিটেড সার্ভিস রিকোয়েস্ট</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> ফুল-স্ট্যাক ওয়েব অ্যাপ্লিকেশন</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> এন্টারপ্রাইজ এআই অটোমেশন</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> ডেডিকেটেড অ্যাকাউন্ট ম্যানেজার</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> স্ট্র্যাটেজিক কনসাল্টিং</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> ২৪/৭ ইমার্জেন্সি সাপোর্ট</li>
+            </ul>
+            <a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top" class="btn-outline w-full">আলোচনা করুন</a>
+          </article>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;" class="fade-up delay-2">
+            <a href="https://sites.google.com/view/bangladesh-hub/pricing" target="_top" class="btn-outline">প্ল্যানের বিস্তারিত দেখুন</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Contact Section for Home -->
+    <section class="section-padding" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-container">
+        <div class="contact-info fade-up">
+          <h2 id="contact-title">প্রজেক্ট নিয়ে <span class="gradient-text">আলোচনা করুন</span></h2>
+          <p>আপনার পরবর্তী বড় প্রজেক্টের জন্য আমরা প্রস্তুত। ফর্মে মেসেজ দিন অথবা সরাসরি যোগাযোগ করুন।</p>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>ঢাকা, বাংলাদেশ</span></li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>hello@berawagency.com</span></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><span>+880 1234 567 890</span></li>
+          </ul>
+        </div>
+        <div class="contact-form fade-up delay-2">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name">আপনার নাম</label>
+              <input id="name" name="name" type="text" class="form-control" placeholder="আপনার নাম" required minlength="2" autocomplete="name" />
+              <p class="error-text" id="nameError">দয়া করে অন্তত ২ অক্ষরের নাম লিখুন।</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">ইমেইল</label>
+              <input id="email" name="email" type="email" class="form-control" placeholder="আপনার ইমেইল অ্যাড্রেস" required autocomplete="email" />
+              <p class="error-text" id="emailError">দয়া করে বৈধ ইমেইল লিখুন।</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">সার্ভিস নির্বাচন</label>
+              <select id="service" name="service" class="form-control" required>
+                <option value="" selected disabled>সার্ভিস নির্বাচন করুন</option>
+                <option value="video">Video Editing</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="social">Social Management</option>
+                <option value="graphics">Graphics Design</option>
+                <option value="ai">AI Automation</option>
+                <option value="webapp">Web App Build</option>
+                <option value="webdev">Web Development</option>
+              </select>
+              <p class="error-text" id="serviceError">একটি সার্ভিস নির্বাচন করুন।</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">প্রজেক্ট ডিটেইলস</label>
+              <textarea id="message" name="message" class="form-control" placeholder="আপনার প্রজেক্ট সম্পর্কে বিস্তারিত লিখুন..." required minlength="10"></textarea>
+              <p class="error-text" id="messageError">দয়া করে অন্তত ১০ অক্ষরের বার্তা লিখুন।</p>
+            </div>
+            <button type="submit" class="btn-primary w-full flex-center" id="submitBtn">
+              মেসেজ পাঠান <i class="fa-solid fa-paper-plane" aria-hidden="true" style="margin-left: 8px;"></i>
+            </button>
+            <p id="formStatus" class="sr-only" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section (Target Top Added) -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="https://sites.google.com/view/bangladesh-hub/" target="_top" class="logo"><i class="fa-solid fa-bolt" aria-hidden="true"></i> BeRaW</a>
+          <p>আমরা একটি প্রিমিয়াম ডিজিটাল এজেন্সি যা আধুনিক টেকনোলজি ব্যবহার করে ব্র্যান্ডের ডিজিটাল উপস্থিতি শক্তিশালী করে।</p>
+          <div class="social-links">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>কুইক লিংকস</h4>
+          <ul>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/" target="_top">হোমপেজ</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">সেবা</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/pricing" target="_top">প্রাইসিং</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/contact" target="_top">যোগাযোগ</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>আমাদের সার্ভিস</h4>
+          <ul>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">ওয়েব ডেভেলপমেন্ট</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">এআই অটোমেশন</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">ডিজিটাল মার্কেটিং</a></li>
+            <li><a href="https://sites.google.com/view/bangladesh-hub/services" target="_top">ভিডিও এডিটিং</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>লিগ্যাল</h4>
+          <ul>
+            <li><a href="#" target="_top">Privacy Policy</a></li>
+            <li><a href="#" target="_top">Terms of Service</a></li>
+            <li><a href="#" target="_top">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 BeRaW Digital Agency. All Rights Reserved. Crafted in Bangladesh.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="উপরে যান">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script>
+    (() => {
+      "use strict";
+      const body = document.body, header = document.getElementById("header"), mobileMenu = document.getElementById("mobile-menu"), navLinks = document.getElementById("nav-links"), navAnchors = [...document.querySelectorAll('.nav-links a')], menuIcon = mobileMenu?.querySelector("i"), scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      const setMenuState = (open) => {
+        if (!navLinks || !mobileMenu || !menuIcon) return;
+        navLinks.classList.toggle("active", open); mobileMenu.setAttribute("aria-expanded", String(open));
+        menuIcon.classList.toggle("fa-bars", !open); menuIcon.classList.toggle("fa-xmark", open);
+        body.style.overflow = open ? "hidden" : "";
+      };
+
+      mobileMenu?.addEventListener("click", (e) => { e.stopPropagation(); setMenuState(!navLinks.classList.contains("active")); });
+      document.addEventListener("click", (e) => { if (navLinks.classList.contains("active") && !header.contains(e.target)) setMenuState(false); });
+      navAnchors.forEach((a) => a.addEventListener("click", () => setMenuState(false)));
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenuState(false); });
+      scrollTopBtn?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+      let ticking = false;
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const sp = window.scrollY, compact = sp > 40;
+            header.style.background = compact ? "rgba(3, 3, 5, 0.95)" : "rgba(3, 3, 5, 0.7)";
+            header.style.boxShadow = compact ? "0 4px 30px rgba(0,0,0,.5)" : "none";
+            header.style.padding = compact ? "0.75rem 5%" : "1.1rem 5%";
+            scrollTopBtn.classList.toggle("visible", sp > 500);
+            ticking = false;
+          }); ticking = true;
+        }
+      }, { passive: true });
+
+      // Multi-page approach: removed scroll-spy observer for nav links since links are absolute now.
+
+      const counterEls = document.querySelectorAll(".counter");
+      let countersDone = false;
+      const animateCounter = (el, target, suffix = "") => {
+        const duration = 1500, startTime = performance.now();
+        const tick = (now) => {
+          const progress = Math.min((now - startTime) / duration, 1);
+          el.textContent = `${Math.floor((1 - Math.pow(1 - progress, 3)) * target)}${suffix}`;
+          if (progress < 1) requestAnimationFrame(tick); else el.textContent = `${target}${suffix}`;
+        }; requestAnimationFrame(tick);
+      };
+
+      const statsSection = document.getElementById("statistics");
+      if (statsSection) {
+        const statsObserver = new IntersectionObserver((entries) => {
+          if (entries[0].isIntersecting && !countersDone) {
+            counterEls.forEach((c) => animateCounter(c, Number(c.dataset.target || 0), c.dataset.suffix || ""));
+            countersDone = true; statsObserver.disconnect();
+          }
+        }, { threshold: 0.5 }); statsObserver.observe(statsSection);
+      }
+
+      const fadeEls = document.querySelectorAll(".fade-up");
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("visible"); revealObserver.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      fadeEls.forEach((el) => revealObserver.observe(el));
+
+      const form = document.getElementById("contactForm"), submitBtn = document.getElementById("submitBtn"), formStatus = document.getElementById("formStatus");
+      const fields = { name: { el: document.getElementById("name"), err: document.getElementById("nameError") }, email: { el: document.getElementById("email"), err: document.getElementById("emailError") }, service: { el: document.getElementById("service"), err: document.getElementById("serviceError") }, message: { el: document.getElementById("message"), err: document.getElementById("messageError") } };
+      
+      const validate = (k) => {
+        const f = fields[k], v = f.el.value.trim();
+        let ok = k === "name" ? v.length >= 2 : k === "email" ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) : k === "service" ? v !== "" : v.length >= 10;
+        f.el.setAttribute("aria-invalid", String(!ok)); f.err.classList.toggle("active", !ok); return ok;
+      };
+      Object.keys(fields).forEach(k => { fields[k].el.addEventListener("input", () => validate(k)); fields[k].el.addEventListener("blur", () => validate(k)); });
+
+      form?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (!Object.keys(fields).every(validate)) return;
+        const orig = submitBtn.innerHTML; submitBtn.disabled = true;
+        submitBtn.innerHTML = 'প্রসেস হচ্ছে... <i class="fa-solid fa-spinner fa-spin" style="margin-left:8px;"></i>';
+        await new Promise(r => setTimeout(r, 1200));
+        submitBtn.innerHTML = 'পাঠানো হয়েছে <i class="fa-solid fa-check" style="margin-left:8px;"></i>';
+        submitBtn.style.background = "var(--success)"; submitBtn.style.boxShadow = "0 10px 30px rgba(16,185,129,.3)";
+        form.reset(); Object.keys(fields).forEach(k => { fields[k].el.setAttribute("aria-invalid", "false"); fields[k].err.classList.remove("active"); });
+        setTimeout(() => { submitBtn.disabled = false; submitBtn.innerHTML = orig; submitBtn.style.background = ""; submitBtn.style.boxShadow = ""; }, 2500);
+      });
+    })();
+  </script>
+</body>
+</html>
